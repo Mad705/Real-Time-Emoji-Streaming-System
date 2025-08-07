@@ -22,7 +22,7 @@ The architecture ensures both **high concurrency** and **low latency**, essentia
 
 ## 🏗️ System Architecture
 
-![Application_Architecture](./Architecture.png)
+![Application_Architecture](./1.png)
 
 The system architecture is divided into three key stages:
 
@@ -48,7 +48,7 @@ The system architecture is divided into three key stages:
 
 ## 2️⃣ Stream Processing & Aggregation
 
-![Micro-Batch-Processing](./Mirco-Batch.png)
+![Micro-Batch-Processing](./2.png)
 
 - A **Kafka Consumer** ingests emoji events from the broker
 - The system performs **real-time aggregation** of emoji counts over short, fixed intervals (e.g., every 2 seconds)
@@ -59,7 +59,7 @@ The system architecture is divided into three key stages:
 
 ## 3️⃣ Real-Time Delivery to Clients at Scale
 
-![Pub-Sub-Model](./Pub-Sub.png)
+![Pub-Sub-Model](./3.png)
 
 The final stage involves **distributing the processed emoji aggregates back to end-users**, using a publish-subscribe (pub-sub) model:
 
